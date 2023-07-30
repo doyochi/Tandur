@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".v2.view.activity.DetailLandActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Urban Farming"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="14sp"
+            android:textColor="@color/text1"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_weight="1"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="228dp"
+                    app:iss_auto_cycle="true"
+                    app:iss_period="1000"
+                    app:iss_delay="0"
+                    app:iss_placeholder="@drawable/item_default"
+                    app:iss_error_image="@drawable/error"
+                    app:iss_title_background="@android:color/transparent"
+                    app:iss_selected_dot="@android:color/transparent"
+                    app:iss_unselected_dot="@android:color/transparent"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:layout_margin="12dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardBackgroundColor="@color/black">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="6dp">
+
+                        <TextView
+                            android:id="@+id/textViewGallery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="1/5"
+                            android:fontFamily="@font/open_sans"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewNamaLahan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Lahan 2x5 Halaman Rumah"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/green_theme1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rating Lahan"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textSize="12sp"
+                            android:textColor="@color/text2"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <RatingBar
+                                android:id="@+id/ratingBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:theme="@style/RatingBar"
+                                android:layout_marginRight="10dp"
+                                android:max="5"
+                                android:numStars="5"/>
+
+                            <TextView
+                                android:id="@+id/textViewRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="5.0"
+                                android:fontFamily="@font/open_sans"
+                                android:textSize="12dp"
+                                android:textColor="@color/text2"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lokasi Lahan"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textSize="12sp"
+                            android:textColor="@color/text2"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_location"
+                                android:layout_marginRight="8dp"/>
+
+                            <TextView
+                                android:id="@+id/textViewLokasi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="Jl. Kotalama Indah No.20"
+                                android:fontFamily="@font/open_sans"
+                                android:textSize="12sp"
+                                android:textColor="@color/text2"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Pemilik Lahan"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="12sp"
+                    android:textColor="@color/text2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shapeableImageViewUser"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/ic_profil"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewNamaUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Dani Samsul Huda"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:lines="1"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textSize="15dp"
+                            android:textColor="@color/text1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            tools:text="Online 4 menit yang lalu"
+                            android:fontFamily="@font/open_sans"
+                            android:textSize="12dp"
+                            android:textColor="@color/text2"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/materialButtonHubungi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hubungi"
+                        android:textColor="@color/text2"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:drawableLeft="@drawable/ic_message"
+                        android:drawableTint="@color/text2"
+                        android:backgroundTint="@color/graylight"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fasilitas Lahan"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/text1"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewFasilitas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:overScrollMode="never"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keterangan Lahan"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/text1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ukuran Lahan"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="12sp"
+                        android:textColor="@color/text2"/>
+
+                    <TextView
+                        android:id="@+id/textViewUkuranLahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        tools:text="2 x 5 meter"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/green_theme1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID Lahan"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="12sp"
+                        android:textColor="@color/text2"/>
+
+                    <TextView
+                        android:id="@+id/textViewIdLahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        tools:text="17531688"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/green_theme1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terdaftar Pada"
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="12sp"
+                        android:textColor="@color/text2"/>
+
+                    <TextView
+                        android:id="@+id/textViewTerdaftarPada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        tools:text="21 Agustus 2020"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/green_theme1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Peraturan Lahan"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/text1"/>
+
+                <TextView
+                    android:id="@+id/textViewPeraturanLahan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    tools:text="Peraturan yang paling utama adalah jagalah kebersihan, dan rapikan peralatan bila selesai menggunakannya. Selalu gunakan sarung tangan agar tangan terlindungi dari obat tanaman."
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="14sp"
+                    android:textColor="@color/text1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi Lahan"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/text1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="6dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewLokasiLahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_map"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Ulasan"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textSize="14sp"
+                        android:textColor="@color/text1"/>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_empty"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Belum Ada Ulasan"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:textSize="14sp"
+                            android:textColor="@color/text1"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewReview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:overScrollMode="never"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/materialButtonLihatLainnya"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        app:strokeColor="@color/gray"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Lihat Semua"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:textColor="@color/text1"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lahan Lainnya"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textSize="14sp"
+                    android:textColor="@color/text1"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewLahan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:overScrollMode="never"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                tools:text="Rp 398.000/Bln"
+                android:fontFamily="@font/open_sans_bold"
+                android:textSize="16sp"
+                android:textColor="@color/text1"
+                android:layout_gravity="center"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/materialButtonSewaSekarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cornerRadius="8dp"
+                android:text="Sewa Sekarang"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/green_theme1"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "685051197232",
+    "project_id": "push-notification-dc501",
+    "storage_bucket": "push-notification-dc501.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685051197232:android:6e80d1d6b1c1260eaffaf5",
+        "android_client_info": {
+          "package_name": "id.hikmah.stiki.tandur_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685051197232-5bpj0mun6j7bj1o8ea1gi583aujs4sgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8XjKVstnQp047W4nUaN8g6SoSI19bxjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685051197232-5bpj0mun6j7bj1o8ea1gi583aujs4sgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

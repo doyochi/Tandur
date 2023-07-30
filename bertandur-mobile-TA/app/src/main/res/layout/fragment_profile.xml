@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".v2.view.fragment.ProfileFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/green_theme1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Saya"
+            android:fontFamily="@font/open_sans_bold"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_marginRight="24dp"
+                android:scaleType="centerCrop"
+                app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView"
+                android:src="@drawable/ic_no_profile"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewNamaLengkap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Sherrie Katrina"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/text1"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="wahyudi1@gmail.com"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/text2"
+                    android:textSize="12sp"  />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/ic_verified"/>
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Verified"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/text2"
+                        android:textStyle="italic"
+                        android:textSize="12sp"  />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutDetailProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_person_profile"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:text="Detail Profile"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/text1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_next"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManajemenLahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_manajemen_lahan"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:text="Manajemen Lahan"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/text1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_next"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutKatalogBarangAnda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_katalog_barang_anda"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:text="Katalog Barang Anda"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/text1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_next"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_logout"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_weight="1"
+                android:text="Logout"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/text1"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_next"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:gravity="center">-->
+
+<!--                <com.google.android.material.imageview.ShapeableImageView-->
+<!--                    android:id="@+id/shapeableImageView"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView"-->
+<!--                    android:src="@drawable/ic_no_profile"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textViewNama"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="18dp"-->
+<!--                    android:fontFamily="@font/open_sans_semibold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="16sp"-->
+<!--                    tools:text="Sherrie Katrina" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginTop="18dp"-->
+<!--                android:padding="20dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="@color/white">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Detail Profile"-->
+<!--                    android:fontFamily="@font/open_sans_semibold"-->
+<!--                    android:textColor="@color/green_theme1"-->
+<!--                    android:textSize="14sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:text="Nama Lengkap"-->
+<!--                    android:fontFamily="@font/open_sans_semibold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="13sp"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textViewNamaLengkap"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    tools:text="Sherrie Katrina"-->
+<!--                    android:fontFamily="@font/open_sans"-->
+<!--                    android:textColor="@color/text2"-->
+<!--                    android:textSize="12sp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:text="Nomor KTP"-->
+<!--                    android:fontFamily="@font/open_sans_semibold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="13sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textViewKTP"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    tools:text="351xxxxxxxx"-->
+<!--                    android:fontFamily="@font/open_sans"-->
+<!--                    android:textColor="@color/text2"-->
+<!--                    android:textSize="12sp"  />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:text="Alamat"-->
+<!--                    android:fontFamily="@font/open_sans_semibold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="13sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textViewAlamat"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    tools:text="Jl. Raya Kendalpayak No  30 Rt 03 Rw 04, Kab Malang, Jawa Timur"-->
+<!--                    android:fontFamily="@font/open_sans"-->
+<!--                    android:textColor="@color/text2"-->
+<!--                    android:textSize="12sp"  />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:text="Email"-->
+<!--                    android:fontFamily="@font/open_sans_semibold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="13sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textViewEmail"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    tools:text="wahyudi1@gmail.com"-->
+<!--                    android:fontFamily="@font/open_sans"-->
+<!--                    android:textColor="@color/text2"-->
+<!--                    android:textSize="12sp"  />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:text="Nomor HP"-->
+<!--                    android:fontFamily="@font/open_sans_semibold"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="13sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textViewHP"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    tools:text="081235698741"-->
+<!--                    android:fontFamily="@font/open_sans"-->
+<!--                    android:textColor="@color/text2"-->
+<!--                    android:textSize="12sp"  />-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/materialButtonRanking"-->
+<!--                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="12dp"-->
+<!--                    android:paddingBottom="12dp"-->
+<!--                    android:text="Ranking"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textSize="12dp"-->
+<!--                    app:strokeWidth="1dp"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    app:cornerRadius="12dp"-->
+<!--                    android:visibility="invisible"/>-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    android:id="@+id/materialButtonKeluar"-->
+<!--                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingTop="12dp"-->
+<!--                    android:paddingBottom="12dp"-->
+<!--                    android:text="Keluar"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textSize="12dp"-->
+<!--                    app:backgroundTint="@color/green_theme1"-->
+<!--                    app:cornerRadius="12dp" />-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+</LinearLayout>

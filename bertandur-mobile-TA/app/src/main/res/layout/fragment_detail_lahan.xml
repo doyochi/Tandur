@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragment.DetailLahanFragment">
+
+    <!--Header-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_margin="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:id="@+id/txt_detail_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Urban Farming"
+            android:fontFamily="@font/open_sans_semibold"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textColor="@color/text1"
+            android:layout_marginVertical="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/ic_back"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/sc_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/header">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--            <HorizontalScrollView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="200dp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:src="@drawable/img_default_product"/>-->
+<!--            </HorizontalScrollView>-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default_product"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lahan 2x5 Halaman Rumah"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/green_theme1"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp">
+                    <LinearLayout
+                        android:id="@+id/v_rating"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rating Lahan"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="@color/text2"/>
+                        <include layout="@layout/layout_stars"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/v_lokasi"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintLeft_toRightOf="@id/v_rating"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lokasi Lahan"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="@color/text2"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_location"
+                                android:layout_marginEnd="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jl. Kotalama Indah No.20"
+                                android:fontFamily="@font/open_sans"
+                                android:textSize="10sp"
+                                android:textColor="@color/text2"
+                                android:layout_marginVertical="5dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pemilik Lahan"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/text2"/>
+                    <include layout="@layout/layout_profile_hubungi"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fasilitas Lahan"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/text1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <include layout="@layout/item_fasilitas_lahan"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Keterangan Lahan"
+                            android:fontFamily="@font/open_sans_bold"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/text1"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ukuran Lahan"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:textColor="@color/text2"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2 x 5 meter"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:textColor="@color/green_theme1"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ID Lahan"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:textColor="@color/text2"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="17531688"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:textColor="@color/green_theme1"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Terdaftar Pada"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:textColor="@color/text2"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21 Agustus 2020"
+                                android:fontFamily="@font/open_sans"
+                                android:textStyle="bold"
+                                android:textSize="12sp"
+                                android:textColor="@color/green_theme1"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peraturan Lahan"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/text1"
+                        android:layout_marginVertical="5dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Peraturan yang paling utama adalah jagalah kebersihan, dan rapikan peralatan bila selesai menggunakannya. Selalu gunakan sarung tangan agar tangan terlindungi dari obat tanaman."
+                        android:fontFamily="@font/open_sans"
+                        android:textSize="12sp"
+                        android:textColor="@color/text2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lokasi Lahan"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/text1"
+                        android:layout_marginVertical="5dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ulasan"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/text1"
+                        android:layout_marginVertical="5dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                        <include layout="@layout/item_ulasan"/>
+                        <include layout="@layout/item_ulasan"/>
+                        <include layout="@layout/item_ulasan"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--Footer-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/footer_sewa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <include layout="@layout/layout_bottom_sewa"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

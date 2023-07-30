@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tandur</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="merchant_id_sb">M122368</string>
+    <string name="client_key_sb">SB-Mid-client-mcb0-HvnGgrVbH4h</string>
+    <string name="server_key_sb">SB-Mid-server-C7YXrs0RqelJGFcJGtn4JrEI</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">FCM Message</string>
+</resources>

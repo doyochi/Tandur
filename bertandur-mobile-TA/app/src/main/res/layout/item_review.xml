@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageViewUser"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_profil"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:shapeAppearance="@style/ShapeAppearance.App.CircleImageView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Alexander Purwoto"
+            android:fontFamily="@font/open_sans"
+            android:textSize="13sp"
+            android:textColor="@color/text2"/>
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="Bibit Unggulan "
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="13sp"
+            android:textColor="@color/text1"/>
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="17 Januari 2020 "
+            android:fontFamily="@font/open_sans"
+            android:textSize="12sp"
+            android:textColor="@color/gray"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:theme="@style/RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:min="0"
+            android:max="5"
+            android:numStars="5"/>
+
+        <TextView
+            android:id="@+id/textViewReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:text="Kemasan sangat rapi dan terlihat sangat melindungi biji-bijiannya. Seller sangat ramah dan fast respond, terdapat sedikit tutorial di kemasan, pengiriman cepat sampai, dan produk ini sangat recommended bagi temen-temen yang mau menanam jeruk. "
+            android:fontFamily="@font/open_sans_semibold"
+            android:textSize="10sp"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/text1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

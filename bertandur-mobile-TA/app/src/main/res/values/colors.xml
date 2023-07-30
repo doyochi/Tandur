@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="green_theme1">#7CBD1E</color>
+
+    <color name="gradient_category">#6DAD11</color>
+    <color name="gradient_category_2">#336DAD11</color>
+    <color name="gradient1">#7CBD1E</color>
+    <color name="gradient2">#92C72B</color>
+    <color name="gradient3">#A7D038</color>
+    <color name="text1">#4A4A4A</color>
+    <color name="text2">#828282</color>
+    <color name="yellow">#F8E064</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="bg_gray">#F2F2F2</color>
+    <color name="bg_button">#E0E0E0</color>
+    <color name="graylight">#F4F4F4</color>
+
+    <color name="background">#FCF9F9</color>
+</resources>

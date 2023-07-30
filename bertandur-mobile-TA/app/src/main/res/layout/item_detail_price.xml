@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 Bulan - Lahan 2x5 m\nHalaman Rumah"
+        android:fontFamily="@font/open_sans"
+        android:textSize="12sp"
+        android:textColor="@color/text2"/>
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Rp 398.000"
+        android:fontFamily="@font/open_sans_bold"
+        android:textSize="14sp"
+        android:textColor="@color/text1"
+        android:gravity="right"/>
+
+</LinearLayout>

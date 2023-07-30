@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.hikmah.stiki.tandur_1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_new_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_new_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tandur_1"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".v2.view.activity.UpdateProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.ManajemenProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.DetailUpdateRentLandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.UpdateRentLandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.ManajemenLahanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.DetailProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.VideoPlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|smallestScreenSize|screenLayout"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.ListVideoBelajarNandurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.BelajarNandurActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.ListReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.FeedbackSellProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.SellProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.UploadEvidenceProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.FeedbackOrderProductActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="www.bertandur.yntkts.my.id"
+                    android:pathPrefix="/finish"
+                    android:scheme="https" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".v2.view.activity.UploadEvidenceRentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.FeedbackOrderLandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.FeedbackInsertLahanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.DetailOrderProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.PaymentProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.ConfirmOrderProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.DetailProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.SearchProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.TandurMarketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.DetailOrderLandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.PaymentMethodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.PaymentLandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.ConfirmOrderLandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.DetailLandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.RentLandDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.RentLandActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.UrbanFarmingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.SignUpKtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v2.view.activity.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".v2.notif.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
